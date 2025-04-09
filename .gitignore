@@ -6,3 +6,4 @@
 *.blg
 *.out
 *.lof
+/images/*.png
