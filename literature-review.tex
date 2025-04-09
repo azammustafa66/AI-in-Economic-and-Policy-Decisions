@@ -1,0 +1,76 @@
+\chapter{\uppercase{Literature Review}}
+\label{chap:literature-review}
+
+Artificial Intelligence (AI) has gained increasing attention in the field of economic forecasting and policy design.
+Several studies have explored the effectiveness of machine learning (ML) models compared to traditional econometric methods.
+This section reviews recent literature on this topic, focusing on methodologies, findings, and limitations, and highlighting areas where further research is needed.
+
+\section{Machine Learning vs. Traditional Econometric Models}
+\label{sec:ml-vs-traditional-econometric-models}
+
+Machine learning models have demonstrated superior performance in forecasting economic conditions compared to
+classical statistical techniques. A study by \citet{HarishParuchuri} on the Italian economy (1995–2015) employed models such as the
+Nonlinear Autoregressive model with Exogenous Inputs (NARX), showing that ML algorithms could reliably predict
+recessions with a lead time of one to two quarters. Unlike traditional methods, these models performed well even
+with unadjusted, raw economic parameters. The findings reinforce the growing consensus that machine learning is an
+effective and adaptable tool for economic forecasting, offering higher accuracy and earlier warning signs of downturns.
+
+\citet{Varian2014-ez} emphasizes that most traditional econometric models are designed for causal inference, while ML models prioritize prediction accuracy.
+This distinction is particularly important in economic forecasting, where the primary objective is to anticipate future outcomes rather than establish causal relationships.
+
+\section{Machine Learning in Financial Forecasting}
+\label{sec:ml-in-financial-forecasting}
+
+Beyond macroeconomic forecasting, machine learning has also shown strong results in the domain of financial forecasting,
+particularly in predicting stock prices and market behavior. \citet{Hsu2016-in} compared the performance of traditional econometric models
+with ML techniques such as Support Vector Machines (SVM) and Artificial Neural Networks (ANN).
+Their study reported that machine learning models outperformed traditional methods, achieving over 80\% accuracy in stock price prediction.
+
+Similarly, \citet{Chernysh2024-vg} found that using ML models, particularly Random Forest and Gradient Boosting, was more effective than the ARIMA (AutoRegressive Integrated Moving Average) model for financial prediction tasks.
+The authors also stressed the significance of feature selection and data preprocessing in enhancing the predictive power of ML models.
+
+\section{Machine Learning in Macroeconomic Forecasting}
+\label{sec:ml-in-macroeconomic-forecasting}
+
+In macroeconomic forecasting, machine learning has been applied to predict indicators such as GDP growth, inflation, and unemployment rates.
+Hybrid models that combine ML techniques with traditional econometric methods have shown promise in improving accuracy.
+For instance, \citet{SaurabhGhosh-AbhishekRanjan} and \citet{Yusuf2025-pc} proposed hybrid frameworks that outperformed standalone ML or econometric approaches.
+Their models closely matched actual economic data, suggesting the advantage of leveraging both data-driven and theory-based methods.
+
+These studies collectively suggest that machine learning offers a significant advantage in economic forecasting, particularly when integrated with traditional econometric approaches.
+However, gaps remain in the application of newer ML models, their interpretability, and their relevance for real-time policy analysis.
+
+\section{Summary of Reviewed Literature}
+\label{sec:summary-of-reviewed-literature}
+
+
+\begin{table}[H]
+    \centering
+    \caption{Summary of Key Literature on ML in Economic Forecasting}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabularx}{\textwidth}{|X|X|X|X|}
+        \hline
+        \textbf{Study}          & \textbf{Focus Area}          & \textbf{Model(s) Used}         & \textbf{Key Findings}                                              \\
+        \hline
+        \citet{HarishParuchuri} & Recession Prediction (Italy) & NARX                           & ML outperformed traditional models; provided 1–2 quarter lead time \\
+        \hline
+        \citet{Varian2014-ez}   & ML vs Econometrics           & General ML comparison          & ML excels in prediction; econometrics suited for causality         \\
+        \hline
+        \citet{Hsu2016-in}      & Financial Forecasting        & SVM, ANN                       & ML achieved over 80\% accuracy in stock price prediction           \\
+        \hline
+        \citet{Chernysh2024-vg} & Financial Forecasting        & RF, Gradient Boosting vs ARIMA & ML more effective; emphasized feature selection and preprocessing  \\
+        \hline
+        \makecell[tl]{\citeauthor{SaurabhGhosh-AbhishekRanjan},                                                                                                      \\ \citeauthor{Yusuf2025-pc}} & Macroeconomic Forecasting & Hybrid Models & Hybrid models outperformed individual ML or econometric models \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+\section{Research Gap and Direction}
+\label{sec:research-gap-and-direction}
+
+While machine learning models have shown significant promise in economic forecasting, limitations such as model interpretability, applicability to real-time policy design, and use in emerging economies remain underexplored.
+Additionally, newer ML models like XGBoost, NGBoost, TabNet, and Temporal Fusion Transformers have not been fully assessed in this domain.
+
+This dissertation aims to build upon the reviewed literature by developing a hybrid forecasting model that integrates traditional econometric techniques with modern ML methods.
+The model will be evaluated against established ML techniques and classical models to assess improvements in accuracy, robustness, and policy relevance.
+Furthermore, newer ML methods such as XGBoost and NGBoost will be tested for their predictive capabilities on economic indicators like GDP growth, inflation, and unemployment, providing a more comprehensive understanding of their utility in economic forecasting.

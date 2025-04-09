@@ -1,0 +1,120 @@
+\documentclass[12pt, a4paper, oneside]{report}
+
+\pagestyle{plain}
+
+\usepackage[left=1.25in, top=0.75in, right=1in, bottom=0.75in, a4paper]{geometry}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{fontspec}
+\usepackage{makecell}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage[english]{babel}
+\usepackage{eso-pic}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{everypage}
+\usepackage{natbib}
+\usepackage{etoolbox}
+\usepackage{url}
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}
+  {\fontsize{16pt}{18pt}\selectfont\chaptername\ \thechapter} % "Chapter 1"
+  {0pt}
+  {\centering\fontsize{18pt}{20pt}\selectfont} % Title centered
+  []
+
+% --- Section Format ---
+\titleformat{\section}
+  {\normalfont\bfseries\fontsize{16pt}{18pt}\selectfont}
+  {\thesection}
+  {1em}
+  {}
+
+% --- Subsection Format ---
+\titleformat{\subsection}
+  {\normalfont\bfseries\fontsize{14pt}{16pt}\selectfont}
+  {\thesubsection}
+  {1em}
+  {}
+
+
+\usetikzlibrary{calc}
+\setmainfont{Times New Roman}
+
+% Border toggle
+\newif\ifborderon
+\borderontrue
+
+\newif\ifborderon
+\borderontrue
+
+\makeatletter
+\AddEverypageHook{%
+  \ifborderon
+    \begin{tikzpicture}[remember picture, overlay]%
+      % Outer thick border
+      \draw[line width=1pt]%
+        ($(current page.north west)+(0.6cm,-0.6cm)$)%
+          rectangle
+        ($(current page.south east)+(-0.6cm,0.6cm)$);%
+      % Inner thin border
+      \draw[line width=0.3pt]%
+        ($(current page.north west)+(0.9cm,-0.9cm)$)%
+          rectangle
+        ($(current page.south east)+(-0.9cm,0.9cm)$);%
+    \end{tikzpicture}%
+  \fi
+}
+\makeatother
+
+\begin{document}
+
+\include{title}
+
+% Header specification
+\setlength{\headheight}{14pt}
+\setlength{\headsep}{6pt}
+\setlength{\topmargin}{-0.25in}
+\setlength{\parindent}{0pt}
+
+% Footer specification
+\setlength{\headheight}{14pt}
+\setlength{\headsep}{6pt}
+\setlength{\topmargin}{-0.25in}
+\setlength{\footskip}{14pt}
+\setlength{\footnotesep}{14pt}
+\setlength{\textheight}{9.67in}
+
+\brokenpenalty=10000 % Disallow page breaks at hyphens
+
+\onehalfspacing % Line Spacing set to 1.5
+\include{certificate}
+\include{declaration}
+
+\pagenumbering{roman}
+\pagestyle{plain}
+\include{acknowledgement}
+
+\borderonfalse
+
+\include{abstract}
+\include{tableofcontents}
+
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\setlength{\parskip}{1em}
+
+\include{introduction}
+\include{literature-review}
+
+
+
+\bibliographystyle{chicago}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,68 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Chernysh, Smishko, Koverninska, Prokopenko,
+  and Pistunov}{Chernysh et~al.}{2024}]{Chernysh2024-vg}
+Chernysh, O., O.~Smishko, Y.~Koverninska, M.~Prokopenko, and I.~Pistunov (2024,
+  December).
+\newblock The role of artificial intelligence in financial analysis and
+  forecasting: Using data and algorithms.
+\newblock \url{https://doi.org/10.3390/data9080101}.
+
+\bibitem[\protect\citeauthoryear{{FasterCapital}}{{FasterCapital}}{2024}]{fastercapital2024}
+{FasterCapital} (2024).
+\newblock Traditional forecasting methods and their limitations.
+\newblock Accessed: 2025-04-07.
+
+\bibitem[\protect\citeauthoryear{Ghosh and Ranjan}{Ghosh and
+  Ranjan}{2023}]{SaurabhGhosh-AbhishekRanjan}
+Ghosh, S. and A.~Ranjan (2023).
+\newblock Machine learning in economics: A review of the literature and future
+  directions.
+\newblock \url{https://doi.org/10.21098/bemp.v26i0.2455}.
+\newblock Accessed: 2025-04-09.
+
+\bibitem[\protect\citeauthoryear{{Google Cloud}}{{Google
+  Cloud}}{a}]{googleai-applications}
+{Google Cloud}.
+\newblock What are ai applications?
+\newblock Accessed: 2025-04-07.
+
+\bibitem[\protect\citeauthoryear{{Google Cloud}}{{Google
+  Cloud}}{b}]{googleai-overview}
+{Google Cloud}.
+\newblock What is artificial intelligence (ai)?
+\newblock Accessed: 2025-04-07.
+
+\bibitem[\protect\citeauthoryear{Hsu, Lessmann, Sung, Ma, and Johnson}{Hsu
+  et~al.}{2016}]{Hsu2016-in}
+Hsu, M.-W., S.~Lessmann, M.-C. Sung, T.~Ma, and J.~E.~V. Johnson (2016,
+  November).
+\newblock Bridging the divide in financial market forecasting: machine learners
+  vs. financial economists.
+\newblock \url{https://doi.org/10.1016/j.eswa.2016.06.020}.
+
+\bibitem[\protect\citeauthoryear{Parchuri}{Parchuri}{2023}]{HarishParuchuri}
+Parchuri, H. (2023).
+\newblock Conceptualization of machine learning in economic forecasting.
+\newblock \url{https://doi.org/10.18034/abr.v11i1.532}.
+\newblock Accessed: 2025-04-09.
+
+\bibitem[\protect\citeauthoryear{{Tableau Software}}{{Tableau
+  Software}}{2024}]{tableauhistory}
+{Tableau Software} (2024).
+\newblock The history of ai: How artificial intelligence evolved.
+\newblock Accessed: 2025-04-07.
+
+\bibitem[\protect\citeauthoryear{Varian}{Varian}{2014}]{Varian2014-ez}
+Varian, H.~R. (2014, May).
+\newblock Big data: New tricks for econometrics.
+\newblock {\em J. Econ. Perspect.\/}~{\em 28\/}(2).
+
+\bibitem[\protect\citeauthoryear{Yusuf, Idris, and Akinlolu}{Yusuf
+  et~al.}{2025}]{Yusuf2025-pc}
+Yusuf, J.~A., A.~Idris, and A.~O. Akinlolu (2025, March).
+\newblock Machine learning and econometrics: Bridging the gap for enhanced
+  economic analysis.
+\newblock {\em Al-Ghary Jour. Eco. Admini. Sci.\/}~{\em 21\/}(1), 55--86.
+
+\end{thebibliography}
