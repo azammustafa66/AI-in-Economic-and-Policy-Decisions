@@ -7,3 +7,5 @@
 *.out
 *.lof
 /images/*.png
+.venv
+.env

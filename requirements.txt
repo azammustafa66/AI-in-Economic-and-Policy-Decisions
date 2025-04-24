@@ -1,0 +1,14 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+statsmodels
+scikit-learn
+pmdarima
+openpyxl
+jupyter
+ipykernel
+notebook
+torch
+transformers

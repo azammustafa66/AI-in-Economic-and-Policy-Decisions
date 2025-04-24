@@ -1,0 +1,30 @@
+\chapter{Conclusions}
+\label{chap:conclusions}
+
+In this chapter, we summarize the key findings of our research and discuss their implications. We also outline potential future work that could build on our findings and address any limitations encountered during the study.
+
+\section{Summary of Findings}
+\label{sec:summary-findings}
+
+The main findings of our research demonstrate that the integration of traditional econometric models with modern machine learning (ML) approaches can significantly enhance the forecasting of macroeconomic indicators such as GDP growth. We applied and compared several models, including ARIMA, SARIMA, Linear Regression, Random Forest, XGBoost, NGBoost, and a Recurrent Neural Network (RNN) using PyTorch.
+
+Among the ML models, XGBoost and Random Forest showed superior performance in terms of RMSE and MAE metrics, indicating their robustness in capturing non-linear patterns in structured data. The RNN model was effective in capturing temporal dependencies and produced forecasts aligned with macroeconomic cycles.
+
+Additionally, we explored the use of BERT embeddings derived from economic news headlines, which improved the predictive power of models like XGBoost by incorporating sentiment and context from unstructured text data. This aligns with previous work by \citet{arora2021economicbert}, who demonstrated the value of transformer-based text embeddings in economic modeling, and \citet{gentzkow2019measuring}, who emphasized the role of media content in economic behavior.
+
+Our findings support the growing body of literature advocating the fusion of NLP and time-series analysis for real-time economic forecasting \citep{baker2021forecasting, ng2022text}. This multidisciplinary approach enhances traditional models by introducing responsiveness to news, events, and policy shifts that purely numeric models may overlook.
+
+This research serves as a foundational exploration, and we acknowledge the need for further validation across more diverse datasets and macroeconomic settings.
+
+\section{Future Work}
+\label{sec:future-work}
+
+Future studies could:
+\begin{itemize}
+    \item Extend the use of BERT or domain-specific transformer models like FinBERT or BERTopic for topic-aware sentiment analysis.
+    \item Test these models on a broader range of countries and indicators (e.g., inflation, interest rates, employment).
+    \item Incorporate real-time event detection from news streams (e.g., GDELT) for live forecasting.
+    \item Investigate explainability techniques such as SHAP or LIME to interpret model decisions in policy contexts.
+\end{itemize}
+
+Such enhancements could push the boundaries of predictive accuracy and offer actionable insights for policymakers, researchers, and economists alike.
