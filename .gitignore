@@ -6,6 +6,6 @@
 *.blg
 *.out
 *.lof
-/images/*.png
+*.loc
 .venv
 .env
