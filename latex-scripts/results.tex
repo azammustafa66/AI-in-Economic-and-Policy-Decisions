@@ -13,7 +13,9 @@ We began our analysis with traditional econometric models, including ARIMA and V
 
 The econometric models were applied to U.S. data from FRED, focusing on Real Personal Consumption Expenditure, Real Gross Private Domestic Investment, Real Government Consumption Expenditures and Gross Investment, and Real Imports of Goods and Services.
 
-\ref{../data/gdp_metrics_table.tex} summarizes the performance of ARIMA and SARIMA models. The ARIMA model was fitted to the data, and the SARIMA model was used to account for seasonality. The models were evaluated using RMSE and MAPE metrics.
+\ref{tab:gdp_metrics_table} summarizes the performance of ARIMA and SARIMA models. The ARIMA model was fitted to the data, and the SARIMA model was used to account for seasonality. The models were evaluated using RMSE and MAPE metrics.
+
+\input{../data/gdp_metrics_table.tex}
 
 The results indicate that while both models provided reasonable forecasts, SARIMA outperformed ARIMA in terms of accuracy, especially for longer horizons. SARIMA's ability to capture seasonality and trends contributed to its superior performance.
 
@@ -30,12 +32,6 @@ The forecasts for the next 12 months showed a consistent upward trend, reflectin
 \label{subsubsec:model_performance}
 
 To evaluate performance, we used Root Mean Squared Error (RMSE) and Mean Absolute Percentage Error (MAPE). RMSE measures the average magnitude of errors, while MAPE expresses accuracy as a percentage.
-
-\begin{table}[ht]
-    \centering
-    \caption{Model performance metrics for ARIMA and SARIMA}
-    \input{../data/gdp_metrics_table.tex}
-\end{table}
 
 \section{Machine Learning Models}
 \label{subsec:machine_learning_models}
